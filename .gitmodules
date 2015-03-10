@@ -1,0 +1,6 @@
+[submodule "bookshrink"]
+	path = bookshrink
+	url = git@github.com:peterldowns/bookshrink.git
+[submodule "cba-peterldowns"]
+	path = cba-peterldowns
+	url = git@github.com:peterldowns/cba-peterldowns.git
