@@ -4,3 +4,6 @@
 [submodule "website"]
 	path = peterldowns.github.com
 	url = git@github.com:peterldowns/peterldowns.github.com.git
+[submodule "phoodclub"]
+	path = phoodclub
+	url = git@github.mit.edu:6170-fa15/dangpham_downs_iveel_aivanov_final.git
