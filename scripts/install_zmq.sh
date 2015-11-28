@@ -3,7 +3,6 @@ tar zxvf libsodium-1.0.6.tar.gz
 cd libsodium-1.0.6
 ./configure
 make && make install
-
 sudo apt-get install -y libtool pkg-config build-essential autoconf automake uuid-dev build-essential
 wget 'http://download.zeromq.org/zeromq-4.0.7.tar.gz'
 tar zxvf zeromq-4.0.7.tar.gz
