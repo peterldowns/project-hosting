@@ -7,3 +7,6 @@
 [submodule "phoodclub"]
 	path = phoodclub
 	url = git@github.mit.edu:6170-fa15/dangpham_downs_iveel_aivanov_final.git
+[submodule "bitcoin"]
+	path = bitcoin
+	url = git@github.com:axiomzen/cc_PeterDowns_Bitcoin.git
