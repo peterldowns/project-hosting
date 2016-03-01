@@ -2,7 +2,7 @@
 	path = bookshrink
 	url = git@github.com:peterldowns/bookshrink.git
 [submodule "website"]
-	path = peterldowns.github.com
+	path = peterdowns.com
 	url = git@github.com:peterldowns/peterldowns.github.com.git
 [submodule "phoodclub"]
 	path = phoodclub
