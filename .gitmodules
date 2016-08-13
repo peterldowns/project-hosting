@@ -7,3 +7,6 @@
 [submodule "bitcoin"]
 	path = bitcoin
 	url = git@github.com:axiomzen/cc_PeterDowns_Bitcoin.git
+[submodule "freezine.xyz"]
+	path = freezine.xyz
+	url = git@github.com:peterldowns/freezine.xyz.git
