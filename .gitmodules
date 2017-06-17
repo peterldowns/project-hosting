@@ -10,3 +10,6 @@
 [submodule "freezine.xyz"]
 	path = freezine.xyz
 	url = git@github.com:peterldowns/freezine.xyz.git
+[submodule "crtr"]
+	path = crtr
+	url = git@github.com:peterldowns/crtr.git
