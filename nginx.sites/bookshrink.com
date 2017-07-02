@@ -11,3 +11,8 @@ server {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   }
 }
+
+server {
+  server_name *.bookshrink.com;
+  return 302 $scheme://bookshrink.com$request_uri;
+}

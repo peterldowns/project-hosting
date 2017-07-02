@@ -14,3 +14,8 @@ server {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   }
 }
+
+server {
+  server_name *.freezine.xyz;
+  return 302 $scheme://freezine.xyz$request_uri;
+}

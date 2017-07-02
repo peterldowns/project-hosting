@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function enable_site() {
   SITE_NAME="$1"
   sudo cp "./nginx.sites/$SITE_NAME" "/etc/nginx/sites-available/$SITE_NAME"
