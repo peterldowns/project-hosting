@@ -13,4 +13,5 @@ sudo rm /etc/nginx/sites-enabled/*
 enable_site peterdowns.com
 enable_site bookshrink.com
 enable_site freezine.xyz
+enable_site killme.lol
 enable_site _.default.conf

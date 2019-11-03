@@ -8,3 +8,4 @@ set -e
 sudo certbot --nginx -d peterdowns.com -d www.peterdowns.com
 sudo certbot --nginx -d bookshrink.com -d www.bookshrink.com
 sudo certbot --nginx -d freezine.xyz -d www.freezine.xyz
+sudo certbot --nginx -d killme.lol -d www.killme.lol
