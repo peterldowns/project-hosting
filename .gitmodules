@@ -13,6 +13,3 @@
 [submodule "crtr"]
 	path = crtr
 	url = git@github.com:peterldowns/crtr.git
-[submodule "killme.lol"]
-	path = killme.lol
-	url = git@github.com:peterldowns/killme.lol.git

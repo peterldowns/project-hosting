@@ -1,6 +1,31 @@
 server {
-  server_name killme.lol;
+  listen 80;
+  server_name please.killme.lol;
+  # Stonks Strat Guide
   rewrite ^/$ https://docs.google.com/document/d/1JY83Jl0uRGv2WuENxG_hDrqD2hKZK1fIKOnw9sd3tWw/edit;
+}
+server {
+  listen 80;
+  server_name dont.killme.lol;
+  # Anti-Covid19 Strat Guide
+  rewrite ^/$ https://docs.google.com/document/d/1fDVdB1cpn-3kCMGmdq4Up5fnW2HO-GSYJ1744JWf78w/edit;
+}
+
+server {
+  listen 80;
+  server_name zoom.killme.lol;
+  rewrite ^/$ https://zoom.us/j/2524908103;
+}
+
+server {
+  server_name killme.lol;
+  root /home/peterldowns/project-hosting/killme.lol;
+  index index.html;
+
+  rewrite ^/secret/stonks$ https://docs.google.com/document/d/1JY83Jl0uRGv2WuENxG_hDrqD2hKZK1fIKOnw9sd3tWw/edit;
+  rewrite ^/secret/covid$ https://docs.google.com/document/d/1fDVdB1cpn-3kCMGmdq4Up5fnW2HO-GSYJ1744JWf78w/edit;
+  rewrite ^/zoom$ https://zoom.us/j/2524908103;
+
   # location / {
   #   proxy_pass http://127.0.0.1:8081;
   #   proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
