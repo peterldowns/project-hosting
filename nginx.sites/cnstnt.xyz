@@ -1,0 +1,65 @@
+server {
+  server_name cnstnt.xyz;
+
+  root /home/peterldowns/project-hosting/cnstnt.xyz/website;
+  index index.html;
+
+ # managed by Certbot
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/cnstnt.xyz/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/cnstnt.xyz/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+  server_name www.cnstnt.xyz;
+  return 301 $scheme://cnstnt.xyz$request_uri;
+ # managed by Certbot # managed by Certbot
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/cnstnt.xyz/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/cnstnt.xyz/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+  if ($host = cnstnt.xyz) {
+      return 301 https://$host$request_uri;
+  } 
+
+  listen 80;
+  server_name cnstnt.xyz;
+  return 404;
+}
+server {
+    if ($host = cnstnt.xyz) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+  server_name cnstnt.xyz;
+    listen 80;
+    return 404; # managed by Certbot
+
+
+}
+
+server {
+    if ($host = www.cnstnt.xyz) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+  server_name www.cnstnt.xyz;
+
+    listen 80;
+    return 404; # managed by Certbot
+
+
+}

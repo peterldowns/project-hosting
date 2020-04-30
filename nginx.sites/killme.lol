@@ -17,7 +17,7 @@ server {
 server {
   listen 80;
   server_name zoom.killme.lol;
-  rewrite ^/zoom$ https://zoom.us/j/2524908103;
+  rewrite ^/$ https://zoom.us/j/2524908103;
 }
 
 server {
