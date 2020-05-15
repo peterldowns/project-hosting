@@ -1,8 +1,24 @@
+map $sent_http_content_type $expires {
+  default off;
+  text/html epoch;
+  text/css  max;
+  application/javascript max;
+  ~image/ max;
+}
+
 server {
   server_name peterdowns.com;
 
   root /home/peterldowns/project-hosting/peterdowns.com;
   index index.html;
+
+  expires $expires;
+
+  gzip on;
+  gzip_static on;
+  gzip_comp_level 5;
+  gzip_min_length 1024;
+  gzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript image/jpeg image/png image/x-icon;
 
     listen 443 ssl; # managed by Certbot
     ssl_certificate /etc/letsencrypt/live/peterdowns.com/fullchain.pem; # managed by Certbot
